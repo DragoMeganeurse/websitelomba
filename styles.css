@@ -1,0 +1,194 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000;
+    color: #3c3c3c;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+main {
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #ff0000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container utama */
+main {
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Container untuk tiga tombol di atas */
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Jarak antar tombol */
+}
+
+/* Container untuk tombol daftar di bawah */
+.bottom-button {
+    margin-top: 15px; /* Jarak antara tombol daftar dan tiga tombol di atas */
+}
+
+/* Style dasar untuk tombol */
+.btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Efek hover */
+.btn:hover {
+    background-color: #d40000;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek klik */
+.btn:active {
+    transform: scale(0.95);
+    background-color: #b30000;
+}
+
+/* Container untuk logo */
+.logo-container {
+    background-color: white; /* Background putih */
+    padding: 20px; /* Tambahkan padding untuk ruang di sekitar logo */
+    text-align: center; /* Memusatkan logo di tengah */
+    border-radius: 10px; /* Membuat sudut membulat jika diperlukan */
+    margin: 20px auto; /* Pusatkan container logo secara horizontal */
+    width: fit-content; /* Ukuran otomatis sesuai konten */
+}
+
+.logo {
+    max-width: 150px; /* Ukuran maksimum logo, sesuaikan sesuai kebutuhan */
+    height: auto; /* Agar proporsi gambar tetap terjaga */
+}
+
+/* Gaya dasar tombol */
+.back-button {
+    color: red; /* Warna teks */
+    text-decoration: none; /* Hilangkan underline */
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Animasi yang halus */
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Animasi ketika tombol di-hover */
+.back-button:hover {
+    background-color: red; /* Ubah background saat hover */
+    color: white; /* Ubah warna teks */
+    transform: scale(1.1); /* Sedikit perbesar tombol */
+}
+
+/* Animasi saat tombol ditekan */
+.back-button:active {
+    transform: scale(0.9); /* Sedikit perkecil saat ditekan */
+}
+
+.container {
+    display: flex;
+    grid-template-columns: 1fr; /* Kolom tunggal */
+    grid-gap: 30px; /* Jarak antara dua kriteria */
+    padding: 20px;
+    justify-content: space-around; /* Menempatkan kolom dengan jarak yang sesuai */
+  }
+  
+  .kriteria-lomba, .kriteria-penilaian {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan agar terlihat seperti kotak terpisah */
+    width: 45%;
+  }
+  
+  .kriteria-lomba h2, .kriteria-penilaian h2 {
+    color: red;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Jarak antar item dalam list */
+  }
+
+  /* tombol bold */
+  .animasi-tombol {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: font-size 0.3s ease, font-weight 0.3s ease; /* Tambahkan transisi */
+  }
+  
+  .animasi-tombol:hover {
+    font-size: 18px; /* Membesarkan ukuran font ketika di-hover */
+    font-weight: bold; /* Menebalkan font */
+  }
+  
